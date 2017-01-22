@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [study_suite]">
+  <parameter name="host_ip" value="127.0.0.1"/>
+  <parameter name="port" value="4725"/>
+  <parameter name="user_name" value="lntest2"/>
+  <parameter name="pass_word" value="123456"/>
+  <parameter name="property_url" value="./properties/huawei.properties"/>
+  <test name="feedbackStudy(failed)">
+    <parameter name="user_name" value="lntest2"/>
+    <parameter name="pass_word" value="123456"/>
+    <classes>
+      <class name="com.youxue.test.StudyProgressTest">
+        <parameter name="content_name" value="小兔子3"/>
+        <parameter name="fb_type" value="一般"/>
+        <parameter name="fb_content" value="内容一般"/>
+        <methods>
+          <include name="beforeTest"/>
+          <include name="feedbackStudy"/>
+        </methods>
+      </class> <!-- com.youxue.test.StudyProgressTest -->
+    </classes>
+  </test> <!-- feedbackStudy(failed) -->
+</suite> <!-- Failed suite [study_suite] -->

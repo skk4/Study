@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite]">
+  <parameter name="host_ip" value="127.0.0.1"/>
+  <parameter name="port" value="4725"/>
+  <parameter name="user_name" value="xal-00020"/>
+  <parameter name="pass_word" value="123456"/>
+  <parameter name="property_url" value="./properties/samsung.properties"/>
+  <test name="loginYXViaWebDriver(failed)">
+    <parameter name="user_name" value="xal-00020"/>
+    <parameter name="pass_word" value="123456"/>
+    <classes>
+      <class name="com.youxue.test.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="loginYXViaWebDriver"/>
+        </methods>
+      </class> <!-- com.youxue.test.LoginTest -->
+    </classes>
+  </test> <!-- loginYXViaWebDriver(failed) -->
+</suite> <!-- Failed suite [suite] -->

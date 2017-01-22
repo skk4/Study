@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="huawei_suites" preserve-order="true">
+      <parameter name="property_url" value="./properties/huawei.properties"></parameter>
+      <parameter name="host_ip" value="127.0.0.1"></parameter>
+	 <parameter name="port" value="4725"></parameter>
+    <suite-files>
+        <suite-file path="./configure/login.xml"></suite-file>
+    	
+    </suite-files>
+</suite>

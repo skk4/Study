@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="study_suite" preserve-order="true">
+	
+	
+	<test name="feedbackStudy">
+	    <parameter name="user_name" value="lntest2"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+	    
+	    <classes>
+	        <class name="com.youxue.test.StudyProgressTest">
+	            <methods>
+	               <parameter name="content_name" value="小兔子3"></parameter>
+	               <parameter name="fb_type" value="一般"></parameter>
+	               <parameter name="fb_content" value="内容一般"></parameter>
+	                <include name="feedbackStudy"></include>
+	    			
+	            </methods>
+	        </class>
+	    </classes>
+	</test>    
+	    
+	    
+<!--  	<test name="confirmActivityContents">
+	    <parameter name="activity_name" value="活动2"></parameter>
+	    <parameter name="a_author" value="刘阿狸"></parameter>
+	    <parameter name="a_deadline" value="2016/6/27 截止"></parameter>
+	    <parameter name="a_status" value="已完成"></parameter>
+	    <parameter name="a_theme" value="活动2"></parameter>
+	    <parameter name="a_desc" value="这里是活动2的大概描述，详情请查看附件。"></parameter>
+	    <classes>
+	        <class name="com.youxue.test.StudyProgressTest">
+	            <methods>
+	               
+	                <include name="confirmActivityContents"></include>
+	    			
+	            </methods>
+	        </class>
+	    </classes>
+	    
+	</test> -->  
+	
+	
+</suite>
+
+
+
